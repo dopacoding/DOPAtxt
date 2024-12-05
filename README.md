@@ -1,7 +1,11 @@
 
-# DopaTxt - The Lightweight Text Editor for Everyone ✍️
+# ✍️ DopaTxt - The Lightweight Text Editor for Everyone 
 
 **DopaTxt** is a fast, lightweight, and user-friendly text editor desktop application built with **C#** and the **.NET Framework** using **Visual Studio**. Designed for simplicity and efficiency, DopaTxt is perfect for handling everyday text editing tasks without the clutter.
+
+---
+
+ ![Image Alt]([image_url](https://github.com/dopacoding/DOPAtxt/blob/e644a8af7857ceef4cfa5208723527472cfa634d/dopatxt1.JPG)).
 
 ---
 
