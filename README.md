@@ -13,8 +13,23 @@
 
 - **Blazing Fast Performance**: Handles even large text files effortlessly.
 - **Clean User Interface**: Focused and distraction-free editing experience.
+- **Drag and Drop Multiple Files**: Quickly load and edit multiple text files at once by dragging them into the application window.
 - **Core Editing Tools**: Open, create, modify, and save text files with ease.
-- **Portable and Lightweight**: No installation needed—just run and edit.
+- **Multilingual Support**: Choose from English, Arabic, or russian for the best user experience.
+
+
+---
+
+## 🛠️ Drag-and-Drop Support
+
+DopaTxt allows you to open multiple text files simultaneously by dragging them into the application window. Here's how it works:
+
+1. Select multiple text files from your computer.
+2. Drag and drop them into the **DopaTxt** application window.
+3. The application will open each file in a separate tab or instance for editing (depending on the app settings).
+4. Start editing files immediately without navigating through the File menu.
+
+This feature makes it easy to handle multiple documents quickly and efficiently.
 
 ---
 
