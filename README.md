@@ -52,7 +52,7 @@ This feature makes it easy to handle multiple documents quickly and efficiently.
 ### Option 2: Build from Source
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dopatxt.git
+   git clone https://github.com/dopacoding/dopatxt.git
 2. Open the DopaTxt.sln file in Visual Studio.
 3. Restore dependencies and build the project.
 4. Run the application from the bin folder or directly in Visual Studio.
