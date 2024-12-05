@@ -5,7 +5,7 @@
 
 ---
 
-![Screenshot]([image_url](https://github.com/dopacoding/DOPAtxt/blob/e644a8af7857ceef4cfa5208723527472cfa634d/dopatxt1.JPG))
+![DopaTxt in Action]([image_url](https://github.com/dopacoding/DOPAtxt/blob/e644a8af7857ceef4cfa5208723527472cfa634d/dopatxt1.JPG))
 
 ---
 
