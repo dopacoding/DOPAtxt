@@ -74,24 +74,70 @@ namespace DOPAnote
 
         private void SaveAs()
         {
-            saveFileDialog1.InitialDirectory = @".Desktop";
-            saveFileDialog1.Title = "SAVE As";
-            saveFileDialog1.Filter = "txt files(*.txt)|*.txt|All Files(*.*)|*.*";
-            saveFileDialog1.DefaultExt = "txt";
+            if (en.Checked)
+ {
+     saveFileDialog1.InitialDirectory = @".Desktop";
+     saveFileDialog1.Title = "SAVE As";
+     saveFileDialog1.Filter = "txt files(*.txt)|*.txt|All Files(*.*)|*.*";
+     saveFileDialog1.DefaultExt = "txt";
 
 
 
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                string strPath = saveFileDialog1.FileName;
-                if (Path.GetExtension(saveFileDialog1.FileName) != ".txt")
-                {
-                    strPath += ".txt";
-                }
-                StreamWriter sw = new StreamWriter(strPath);
-                sw.WriteLine(richTextBox1.Text);
-                sw.Close();
-            }
+     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+     {
+         string strPath = saveFileDialog1.FileName;
+         if (Path.GetExtension(saveFileDialog1.FileName) != ".txt")
+         {
+             strPath += ".txt";
+         }
+         StreamWriter sw = new StreamWriter(strPath);
+         sw.WriteLine(richTextBox1.Text);
+         sw.Close();
+     }
+ }
+else if (ar.Checked)
+ {
+     saveFileDialog1.InitialDirectory = @".Desktop";
+     saveFileDialog1.Title = "حفظ في";
+     saveFileDialog1.Filter = "txt files(*.txt)|*.txt|All Files(*.*)|*.*";
+     saveFileDialog1.DefaultExt = "txt";
+
+
+
+     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+     {
+         string strPath = saveFileDialog1.FileName;
+         if (Path.GetExtension(saveFileDialog1.FileName) != ".txt")
+         {
+             strPath += ".txt";
+         }
+         StreamWriter sw = new StreamWriter(strPath);
+         sw.WriteLine(richTextBox1.Text);
+         sw.Close();
+     }
+ }
+ else
+ {
+     saveFileDialog1.InitialDirectory = @".Desktop";
+     saveFileDialog1.Title = "Сохранить в";
+     
+     saveFileDialog1.Filter = "txt files(*.txt)|*.txt|All Files(*.*)|*.*";
+     saveFileDialog1.DefaultExt = "txt";
+
+
+
+     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+     {
+         string strPath = saveFileDialog1.FileName;
+         if (Path.GetExtension(saveFileDialog1.FileName) != ".txt")
+         {
+             strPath += ".txt";
+         }
+         StreamWriter sw = new StreamWriter(strPath);
+         sw.WriteLine(richTextBox1.Text);
+         sw.Close();
+     }
+ }
         }
         private void Copy()
         {
