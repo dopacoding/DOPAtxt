@@ -643,18 +643,43 @@ namespace DOPAnote
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrWhiteSpace(richTextBox1.Text))
-            {
-                if (MessageBox.Show("you want to save it ?", "information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                {
-                    SaveAs();
+             if (!String.IsNullOrWhiteSpace(richTextBox1.Text) && en.Checked)
+          {
+     if (MessageBox.Show("you want to save it ?", "information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+     {
+         SaveAs();
 
-                }
-                else
-                {
+     }
+     else
+     {
 
-                }
-            }
+     }
+ }
+
+ else if (!String.IsNullOrWhiteSpace(richTextBox1.Text) && ar.Checked)
+ {
+     if (MessageBox.Show("هل تريد حفظ الملف؟ ", "معلومات", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+     {
+         SaveAs();
+
+     }
+     else
+     {
+
+     }
+ }
+ else
+ {
+     if (MessageBox.Show("Хотите сохранить файл? ?", "информация", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+     {
+         SaveAs();
+
+     }
+     else
+     {
+
+     }
+ }
             this.Close();
         }
         string CopyText;
