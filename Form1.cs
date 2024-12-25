@@ -242,13 +242,25 @@ else if (ar.Checked)
 
                 // Save the file with the new name
                 File.WriteAllText(newFilePath, richTextBox1.Text);
-                MessageBox.Show($"File saved as: {newFilePath}", "File Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                 if (en.Checked)
+                { MessageBox.Show($"File saved as: {newFilePath}", "File Saved", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+                else if (ar.Checked)
+               { MessageBox.Show($"  {newFilePath}: تم حفظ الملف في ", "حفظ الملف", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+                else if (ru.Checked)
+            { MessageBox.Show($"Файл был сохранён в : {newFilePath}", "Сохранить файл", MessageBoxButtons.OK, MessageBoxIcon.Information); }
             }
             else
             {
                 // If the file doesn't exist, just save it normally
                 File.WriteAllText(filePath, richTextBox1.Text);
-                MessageBox.Show($"File saved as: {filePath}", "File Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (en.Checked)
+                { MessageBox.Show($"File saved as: {filePath}", "File Saved", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+                else if (ar.Checked)
+               { MessageBox.Show($" {filePath}: تم حفظ الملف في", "حفظ الملف", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+               else if (ru.Checked)
+               {
+                   MessageBox.Show($"Файл был сохранён в : {filePath}", "Сохранить файл", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               }
             }
 
 
