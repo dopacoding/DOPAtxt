@@ -646,7 +646,7 @@
             // tsbtnalightextleft
             // 
             this.tsbtnalightextleft.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbtnalightextleft.Image = global::DOPAnote.Properties.Resources.text;
+            this.tsbtnalightextleft.Image = global::DOPAnote.Properties.Resources.text__1_;
             this.tsbtnalightextleft.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnalightextleft.Name = "tsbtnalightextleft";
             this.tsbtnalightextleft.Size = new System.Drawing.Size(23, 22);
@@ -656,7 +656,7 @@
             // tsbtnaligntextright
             // 
             this.tsbtnaligntextright.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbtnaligntextright.Image = global::DOPAnote.Properties.Resources.text__1_;
+            this.tsbtnaligntextright.Image = global::DOPAnote.Properties.Resources.text;
             this.tsbtnaligntextright.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnaligntextright.Name = "tsbtnaligntextright";
             this.tsbtnaligntextright.Size = new System.Drawing.Size(23, 22);
