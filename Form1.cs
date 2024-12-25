@@ -714,18 +714,18 @@ else if (ar.Checked)
 
      }
  }
- else
- {
-     if (MessageBox.Show("Хотите сохранить файл? ?", "информация", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-     {
-         SaveAs();
+else if (!String.IsNullOrWhiteSpace(richTextBox1.Text) && ru.Checked)
+{
+    if (MessageBox.Show("Хотите сохранить файл? ?", "информация", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+    {
+        SaveAs();
 
-     }
-     else
-     {
+    }
+    else
+    {
 
-     }
- }
+    }
+}
             this.Close();
         }
         string CopyText;
