@@ -95,7 +95,7 @@
             // 
             this.btnreplaceall.Location = new System.Drawing.Point(185, 151);
             this.btnreplaceall.Name = "btnreplaceall";
-            this.btnreplaceall.Size = new System.Drawing.Size(69, 20);
+            this.btnreplaceall.Size = new System.Drawing.Size(94, 20);
             this.btnreplaceall.TabIndex = 6;
             this.btnreplaceall.Text = "Replace All";
             this.btnreplaceall.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@
             // 
             // btnclear
             // 
-            this.btnclear.Location = new System.Drawing.Point(264, 151);
+            this.btnclear.Location = new System.Drawing.Point(285, 151);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(69, 20);
             this.btnclear.TabIndex = 7;

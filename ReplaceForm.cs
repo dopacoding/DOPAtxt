@@ -39,22 +39,33 @@ namespace DOPAnote
                     }
                     else
                     {
-                      //  MessageBox.Show("We didn't find it, try again another words", "UnSuccessful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                     //  MessageBox.Show("We didn't find it, try again another words", "UnSuccessful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         break;
+                        
                     }
 
                         StartIndex++;
-                     //   StartIndex = wordstartindex + textfind.Length;
+                    //   StartIndex = wordstartindex + textfind.Length;
+
+
+
                     
 
 
-
-
-
                 }
+               
+            }
+            if (dopatxt.instance.rtb1.SelectionBackColor == Color.Yellow && dopatxt.instance.TranslateReplaceForm=="Arabic")
+            {
+                MessageBox.Show("لقد تم ايجاد الكلمة", "تم بنجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-            if (dopatxt.instance.rtb1.SelectionBackColor == Color.Yellow)
+            else if (dopatxt.instance.rtb1.SelectionBackColor == Color.Yellow && dopatxt.instance.TranslateReplaceForm == "Russian")
+            {
+                MessageBox.Show(" Мы действительно нашли это", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if(dopatxt.instance.rtb1.SelectionBackColor == Color.Yellow && dopatxt.instance.TranslateReplaceForm == "English")
             {
                 MessageBox.Show("We did find it", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -113,11 +124,22 @@ namespace DOPAnote
                 }
 
             }
-            if (isreplaced == true)
+            if (isreplaced == true && dopatxt.instance.TranslateReplaceForm == "Arabic")
+            {
+                MessageBox.Show("مبروك,تم التبديل بنجاح!", "تم بنجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (isreplaced == true && dopatxt.instance.TranslateReplaceForm == "Russian")
+            {
+                MessageBox.Show("Заменено успешно!", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (dopatxt.instance.rtb1.SelectionBackColor == Color.Yellow && dopatxt.instance.TranslateReplaceForm == "English")
             {
                 MessageBox.Show("Congratulation,is replaced!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+
         }
 
         private void btnreplaceall_Click(object sender, EventArgs e)
@@ -160,7 +182,17 @@ namespace DOPAnote
                
 
             }
-            if (isreplaced==true)
+            if (isreplaced == true && dopatxt.instance.TranslateReplaceForm == "Arabic")
+            {
+                MessageBox.Show("مبروك,تم التبديل بنجاح!", "تم بنجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (isreplaced == true && dopatxt.instance.TranslateReplaceForm == "Russian")
+            {
+                MessageBox.Show("Заменено успешно!", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (dopatxt.instance.rtb1.SelectionBackColor == Color.Yellow && dopatxt.instance.TranslateReplaceForm == "English")
             {
                 MessageBox.Show("Congratulation,is replaced!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
