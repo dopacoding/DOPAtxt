@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReplaceForm));
             this.btnfind = new System.Windows.Forms.Button();
             this.btnreplace = new System.Windows.Forms.Button();
             this.lbfind = new System.Windows.Forms.Label();
@@ -123,9 +124,11 @@
             this.Controls.Add(this.lbfind);
             this.Controls.Add(this.btnreplace);
             this.Controls.Add(this.btnfind);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReplaceForm";
-            this.Text = "Replace Text";
+            this.Text = "Find and Replace";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ReplaceForm_FormClosed);
+            this.Load += new System.EventHandler(this.ReplaceForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -166,5 +166,33 @@ namespace DOPAnote
 
             }
         }
+
+        private void ReplaceForm_Load(object sender, EventArgs e)
+        {
+            if (dopatxt.instance.TranslateReplaceForm == "Arabic")
+            {
+                this.Text = "بحث و تبديل";
+                lbfind.Text = "بحث : ";
+                lbreplace.Text = " تبديل بـ: ";
+                btnfind.Text = "بحث";
+                btnreplace.Text = "تبديل";
+                btnreplaceall.Text = "تبديل الكل";
+                btnclear.Text = "تنظيف";
+            }
+            else if (dopatxt.instance.TranslateReplaceForm == "Russian")
+            {
+                this.Text = "Заменить И Искать";
+                lbfind.Text = "Искать: ";
+                lbreplace.Text = " Заменить на: ";
+                btnfind.Text = "Искать";
+                btnreplace.Text = "Заменить";
+                btnreplaceall.Text = "Заменить все";
+                btnclear.Text = "Очистить";
+            }
+            else
+            {
+
+            }
+        }
     }
 }

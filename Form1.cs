@@ -8,7 +8,7 @@ namespace DOPAnote
     public partial class dopatxt : Form
     {
 
-
+        public string TranslateReplaceForm;
         public static dopatxt instance;
         public RichTextBox rtb1;
         public dopatxt()
@@ -389,6 +389,7 @@ else if (ar.Checked)
 
         private void TranslateToEnglish()
         {
+            TranslateReplaceForm = "English";
             en.Checked = true;
             en.CheckOnClick = true;
             if (en.Checked)
@@ -465,6 +466,7 @@ else if (ar.Checked)
 
         private void TranslateToArabic()
         {
+            TranslateReplaceForm = "Arabic";
             ar.Checked = true;
             ar.CheckOnClick = true;
             if (ar.Checked)
@@ -542,6 +544,7 @@ else if (ar.Checked)
 
         private void TranslateToRussian()
         {
+            TranslateReplaceForm = "Russian";
             ru.Checked = true;
             ru.CheckOnClick = true;
             if (ru.Checked)
